@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script>
+        function Level1(){
+          document.getElementById("volume").value="30";
+          document.getElementById("msg").innerHTML=`Volume:30%`;
+        }
+          function Level2(){
+          document.getElementById("volume").value="70";
+          document.getElementById("msg").innerHTML=`Volume:70%`;
+        }
+          function Level3(){
+          document.getElementById("volume").value="100";
+          document.getElementById("msg").innerHTML=`Volume Full`;
+        }
+         var l2;
+         function VolumeClick(){
+            setTimeout(Level1,1000);
+            l2=setTimeout(Level2,3000);
+            setTimeout(Level3,5000);
+         }
+         function CancelClick(){
+            clearTimeout(l2);
+         }
+    </script>
+</head>
+<body class="container-fluid p-4">
+    <button onclick="VolumeClick()" class="bi bi-volume-up-fill btn btn-primary"></button>
+    <button class="btn btn-warning" onclick="CancelClick()">Cancel level-2</button>
+    <div class="w-50 mt-2">
+        <input type="range" min="1" max="100" value="1" id="volume" class="form-range">
+    </div>
+    <div class="mt-2">
+        <p id="msg" class="fs-2 fw-bold text-success"></p>
+    </div>
+</body>
+</html>

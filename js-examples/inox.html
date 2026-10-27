@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INOX</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="../src/script/inox.js"></script>
+</head>
+<body class="container-fluid">
+    <div id="ButtonContainer" class="mt-2">
+        <button data-bs-toggle="modal" data-bs-target="#booking" class="btn btn-primary">Quick Booking</button>
+    </div>
+    <div class="modal fade" id="booking">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 id="lblHeader">Quick Booking </h4>
+                    <button class="btn btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex flex-row justify-content-between align-items-baseline">
+                       <select class="form-select" id="lstMovie">
+                        <option>Select Movie</option>
+                        <option>MIRZAPUR</option>
+                        <option>HANUMAN ANSH</option>
+                       </select>
+                       <select class="form-select" id="lstDate">
+                        <option>Select Date</option>
+                        <option>10th-sep-2026</option>
+                        <option>11th-sep-2026</option>
+                       </select>
+                       <select class="form-select" id="lstCinema">
+                        <option>Select Cinema</option>
+                        <option>PVR Ameerpet</option>
+                        <option>Bharat nagar c'hall</option>
+                       </select>
+                       <select class="form-select" id="lstTiming">
+                        <option>Select Time</option>
+                        <option>11.00AM</option>
+                        <option>6.00PM</option>
+                       </select>
+                       <button onclick="BookClick()" id="btnBook" data-bs-dismiss="modal" class="btn btn-primary">Book</button>
+                    </div>
+                </div>
+            </div>          
+        </div>
+    </div>
+
+    <div id="SummeryContainer" class="w-25" style="display: none;">
+     <div class="card w-100 m-2">
+        <div class="card-header">
+            <h5 class="d-flex justify-content-between"><span class="bi bi-ticket-detailed"></span>Booking Summery</h5>
+        </div>
+        <div class="card-body">
+            <img id="imgPoster"  class="w-100" height="200">
+            <div class="mt-2">
+                <dl>
+                    <dt>Movie</dt>
+                    <dd id="lblMovie"></dd>
+                    <dt>Date</dt>
+                    <dd id="lblDate"></dd>
+                    <dt>Cinema</dt>
+                    <dd id="lblCinema"></dd>
+                    <dt>Timing</dt>
+                    <dd id="lblTiming"></dd>
+                </dl>
+            </div>
+        </div>
+        <div class="card-footer">
+            <button data-bs-toggle="modal" onclick="ModifyClick()" class="btn btn-warning bi bi-pen-fill w-100" data-bs-target="#booking">Modify Booking</button>
+        </div>
+     </div>
+    </div>
+    
+
+    
+</body>
+</html>

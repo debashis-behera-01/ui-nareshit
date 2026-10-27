@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOPPING</title>
+     <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</head>
+
+
+<body>
+    <header>
+    <div class="d-flex justify-content-between " style="background-color: rgb(87, 87, 87);">
+                <div class="d-flex justify-content-between align-items-center">
+            <span class="bi bi-bag-fill fs-1 text-white mb-3 mx-3"> </span>
+            <span><h1 class="text-warning">SHOPPING</h1></span>
+               </div>
+             <div class="input-group my-3" style="max-width:450px">
+                <select class="form-select " style="max-width: 70px;">
+                    <option>All</option>
+                    <option>Fashion</option>
+                    <option>Home Decore</option>
+                    <option>Furniture</option>
+                </select>
+                <input type="text" class="form-control" placeholder="search for items">
+                
+            <button class="bi bi-search btn btn-warning"></button>
+            </div>
+            <div class="d-flex align-items-center">
+                <button class="bi bi-cart-fill btn btn-outline-warning d-flex align-items-center ">Cart</button>                
+                <button class="bi bi-person-fill btn btn-outline-primary d-flex align-items-center mx-3" data-bs-toggle="modal" data-bs-target="#login">Login</button>                
+   <div class="dropdown d-flex align-items-center me-3" data-bs-theme="dark">
+
+     <button data-bs-toggle="dropdown" class="btn btn-outline-danger dropdown-toggle">
+
+        MENU
+
+     </button>
+
+     <ul class="dropdown-menu">
+
+        <li class="dropdown-item"> <span class="dropdown-item-text"><a> <span class="bi bi-person"></span> Profile </a></span> </li>
+
+        <li class="dropdown-item"> <span class="dropdown-item-text"><a> <span class="bi bi-gift"></span> Offers </a></span> </li>
+
+        <li class="dropdown-item"> <span class="dropdown-item-text"><a> <span class="bi bi-gear"></span> Settings </a></span> </li>
+
+        <li class="dropdown-item"> <span class="dropdown-item-text"><a> <span class="bi bi-heart text-danger"></span> Favorites </a></span> </li>
+
+        <li class="dropdown-divider"></li>
+
+        <li class="dropdown-item"> <span class="dropdown-item-text"><a> <span class="bi bi-question-circle"></span> Help </a></span> </li>
+
+     </ul>
+
+   </div>
+                </div>
+            </div>
+    </header>
+      <div class="modal fade" id="login">
+            <div class="modal-dialog">
+                <div class="modal-content">
+              <main class="d-flex justify-content-center">
+            <form class="border border-2 p-4 rounded  m-5 " method="get">
+                <div class="fw-bold bi bi-person-fill d-flex justify-content-center">USER REGISTER</div>
+                <div class="mb-3 ">
+                    <label for="text" class="form-lable fw-bold ">User name</label>
+                    <div>
+                        <input type="text" name="text" class="form-control">
+                    </div>
+                </div>
+                <div class="mb-3 ">
+                    <label for="password" class="form-lable fw-bold ">Password</label>
+                    <div>
+                        <input name="password" type="password" class="form-control">
+                    </div>
+                </div>
+                <div class="mb-3 ">
+                    <label for="select-city" class="form-lable fw-bold ">Your City</label>
+                    <div>
+                       <select name="select-city" class="form-select">
+                        <option>Select City</option>
+                        <option>Bhadrak</option>
+                         <option>Bhubaneswer</option>
+                          <option>Jajpur</option>
+                       </select>
+                    </div>
+                </div>
+                 <div class="mb-3 ">
+                    <label for="range" class="form-lable ">Rating</label>
+                    <div>
+                      <input type="range" name="range" class="form-range" min="1" max="5">
+                    </div>
+                </div>
+                <div class="mb-3 ">
+                    <label for="cheakbox" class="form-lable">Subscribe</label>
+                    <div class="form-switch">
+                      <input type="checkbox" name="cheakbox" class="form-check-input"><lable class="form-check-lable">Yes</lable>
+                    </div>
+                </div>
+                <div>
+                    <button type="submit" class="btn btn-warning">Submit</button>
+                     <span><button type="reset" class="btn btn-danger">Clear</button></span>
+                </div>
+            </form>
+            
+        </main>  
+                </div>
+            </div>
+        </div>
+    <div class="carousel slide mt-2" data-bs-ride="carousel" id="banners" data-bs-theme="dark">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="3000">
+                <img src="../images/images 2020.jpg" class="w-100" height="400">
+            </div>
+            <div>
+             <div class="carousel-item " data-bs-interval="3000">
+                <img src="../images/mypagebanner.jpg" class="w-100" height="400">
+            </div>
+
+            <div class="carousel-item " data-bs-interval="3000">
+                <img src="../images/images (10000).jpg" class="w-100" height="400">
+            </div>
+            <div class="carousel-item " data-bs-interval="3000">
+                <img src="../images/iphone-banner.jpg" class="w-100" height="400">
+            </div>
+             <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#banners">
+
+            <span class="carousel-control-prev-icon"></span>
+              </button> 
+                  <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#banners">
+
+            <span class="carousel-control-next-icon"></span>
+        </button> 
+        <div class="carousel-indicators">
+            <button style="width: 20px; height: 3px;;" class="active" data-bs-slide-to="0" data-bs-target="#banners"></button>
+            <button style="width: 20px; height: 3px;"  data-bs-slide-to="1" data-bs-target="#banners"></button>
+            <button style="width: 20px; height: 3px;"  data-bs-slide-to="2" data-bs-target="#banners"></button>
+            <button style="width: 20px; height: 3px;"  data-bs-slide-to="3" data-bs-target="#banners"></button>
+
+        </div>  
+      </div>
+
+        </div>
+    </div>
+    <div class=" nav nav-tabs d-flex justify-content-around">
+        <span class="nav-item"><a class="nav-link fs-4 fw-bold text-secondary " data-bs-toggle="tab" href="#mens">Mens</a></span>
+        <span class="nav-item"><a class="nav-link fs-4 fw-bold text-secondary" data-bs-toggle="tab" href="#womens">Womens</a></span>
+        <span class="nav-item"><a class="nav-link fs-4 fw-bold text-secondary" data-bs-toggle="tab" href="#kids">Kids</a></span>
+        
+    </div>
+          
+    <div class="tab-content">
+        <div class="tab-pane " id="mens">
+          <div class="d-flex justify-content-between py-3" style="padding-right: 120px; padding-left: 120px;">
+            <div class="card" style="width: 300px;">
+                <img src="../images/mens-half.jpg" class="card-img-top" height="250">
+                <div class="card-header text-center">
+                    <h1>HALF SHIRTS MEANS...</h1>
+                    <p class="fw-bold">upto 30% off on this collection.</p>
+                </div>
+                <div class="card-footer text-center text-warning p-3">
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="fw-bold text-black">5</span>
+                </div>
+            </div>
+
+             <div class="card" style="width: 300px;">
+                <img src="../images/mens-full.jpg" class="card-img-top" height="250">
+                <div class="card-header text-center">
+                    <h1>FULL SHIRTS MEANS...</h1>
+                    <p class="fw-bold">upto 25% off on this collection.</p>
+                </div>
+                <div class="card-footer text-center text-warning p-3">
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="fw-bold text-black">5</span>
+                </div>
+             </div>
+
+             <div class="card" style="width: 300px;">
+                <img src="../images/mens-jeans.jpg" class="card-img-top" height="250">
+                <div class="card-header text-center">
+                    <h1>JEANS MEANS...</h1>
+                    <p class="fw-bold">upto 20% off on this collection.</p>
+                </div>
+                <div class="card-footer text-center text-warning p-3">
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="fw-bold text-black">5</span>
+                </div>
+             </div>
+
+             <div class="card" style="width: 300px;">
+                <img src="../images/mens-track-pant.jpg" class="card-img-top" height="250">
+                <div class="card-header text-center">
+                    <h1>TRACK PANT MEANS...</h1>
+                    <p class="fw-bold">upto 15% off on this collection.</p>
+                </div>
+                <div class="card-footer text-center text-warning p-3">
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="fw-bold text-black">5</span>
+                </div>
+             </div>
+          </div>
+            
+            <div class="d-flex justify-content-between py-3" style="padding-right: 120px; padding-left: 120px;" >
+                <div class="card" style="width: 300px;">
+                <img src="../images/gogles-men.jpg" class="card-img-top" height="250">
+                <div class="card-header text-center">
+                    <h1>SUNGLASSES MEANS...</h1>
+                    <p class="fw-bold">upto 30% off on this collection.</p>
+                </div>
+                <div class="card-footer text-center text-warning p-3">
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="fw-bold text-black">5</span>
+                </div>
+                </div>
+
+            <div class="card" style="width: 300px;">
+                <img src="../images/men-belt.jpg" class="card-img-top" height="250">
+                <div class="card-header text-center">
+                    <h1>BELTS MEANS...</h1>
+                    <p class="fw-bold">it starts just as 199$....</p>
+                </div>
+                <div class="card-footer text-center text-warning p-3">
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="fw-bold text-black">5</span>
+                </div>
+            </div>
+
+            <div class="card" style="width: 300px;">
+                <img src="../images/mens-breslet.jpg" class="card-img-top" height="250">
+                <div class="card-header text-center">
+                    <h1>BRSLATE MENS..</h1>
+                    <p class="fw-bold">it starts just at 99$...</p>
+                </div>
+                <div class="card-footer text-center text-warning p-3">
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="fw-bold text-black">5</span>
+                </div>
+            </div>
+
+            <div class="card" style="width: 300px;">
+                <img src="../images/mens-caps.jpg" class="card-img-top" height="250">
+                <div class="card-header text-center">
+                    <h1>CAPS FOR MEANS...</h1>
+                    <p class="fw-bold">upto 25% off on this collection.</p>
+                </div>
+                <div class="card-footer text-center text-warning p-3">
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="fw-bold text-black">5</span>
+                </div>
+            </div>
+
+            </div>
+            
+        </div>
+
+        <div class="tab-pane" id="womens">
+           <div class="d-flex justify-content-between py-3" style="padding-right: 120px; padding-left: 120px;">
+            <div class="card" style="width: 300px;">
+                <img src="../images/women-kurti.jpg" class="card-img-top" height="250">
+                <div class="card-header text-center">
+                    <h1>KURTI WOMEANS...</h1>
+                    <p class="fw-bold">upto 30% off on this collection.</p>
+                </div>
+                <div class="card-footer text-center text-warning p-3">
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="fw-bold text-black">5</span>
+                </div>
+            </div>
+
+             <div class="card" style="width: 300px;">
+                <img src="../images/short-women.jpg" class="card-img-top" height="250">
+                <div class="card-header text-center">
+                    <h1>SHORT-KURTI WOMEANS...</h1>
+                    <p class="fw-bold">upto 25% off on this collection.</p>
+                </div>
+                <div class="card-footer text-center text-warning p-3">
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="fw-bold text-black">5</span>
+                </div>
+             </div>
+
+             <div class="card" style="width: 300px;">
+                <img src="../images/jeans-women.jpg" class="card-img-top" height="250">
+                <div class="card-header text-center">
+                    <h1>JEANS WOMEANS...</h1>
+                    <p class="fw-bold">upto 20% off on this collection.</p>
+                </div>
+                <div class="card-footer text-center text-warning p-3">
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="fw-bold text-black">5</span>
+                </div>
+             </div>
+
+             <div class="card" style="width: 300px;">
+                <img src="../images/legins-women.jpg" class="card-img-top" height="250">
+                <div class="card-header text-center">
+                    <h1>LEGGINS WOMEANS...</h1>
+                    <p class="fw-bold">upto 15% off on this collection.</p>
+                </div>
+                <div class="card-footer text-center text-warning p-3">
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="fw-bold text-black">5</span>
+                </div>
+             </div>
+          </div>
+
+          <div class="d-flex justify-content-between py-3" style="padding-right: 120px; padding-left: 120px;">
+            <div class="card" style="width: 300px;">
+                <img src="../images/sunglass-women.jpg" class="card-img-top" height="250">
+                <div class="card-header text-center">
+                    <h1>SUNGLASSES WOMEANS...</h1>
+                    <p class="fw-bold">upto 30% off on this collection.</p>
+                </div>
+                <div class="card-footer text-center text-warning p-3">
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="fw-bold text-black">5</span>
+                </div>
+            </div>
+
+             <div class="card" style="width: 300px;">
+                <img src="../images/caps-women.jpg" class="card-img-top" height="250">
+                <div class="card-header text-center">
+                    <h1>CAPS-FOR WOMEANS...</h1>
+                    <p class="fw-bold">upto 25% off on this collection.</p>
+                </div>
+                <div class="card-footer text-center text-warning p-3">
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="fw-bold text-black">5</span>
+                </div>
+             </div>
+
+             <div class="card" style="width: 300px;">
+                <img src="../images/neaklace-women.jpg" class="card-img-top" height="250">
+                <div class="card-header text-center">
+                    <h1>NECKLACE WOMEANS...</h1>
+                    <p class="fw-bold">upto 20% off on this collection.</p>
+                </div>
+                <div class="card-footer text-center text-warning p-3">
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="fw-bold text-black">5</span>
+                </div>
+             </div>
+
+             <div class="card" style="width: 300px;">
+                <img src="../images/meakupkit-women.jpg" class="card-img-top" height="250">
+                <div class="card-header text-center">
+                    <h1>MEAKUP-KIT WOMEANS...</h1>
+                    <p class="fw-bold">upto 15% off on this collection.</p>
+                </div>
+                <div class="card-footer text-center text-warning p-3">
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="fw-bold text-black">5</span>
+                </div>
+             </div>
+          </div>
+        </div>
+
+        <div class="tab-pane" id="kids">
+           <div class="d-flex justify-content-between py-3" style="padding-right: 120px; padding-left: 120px;">
+            <div class="card" style="width: 300px;">
+                <img src="../images/kids-kurti.jpg" class="card-img-top" height="250">
+                <div class="card-header text-center">
+                    <h1>KURTI SETS KIDS...</h1>
+                    <p class="fw-bold">upto 30% off on this collection.</p>
+                </div>
+                <div class="card-footer text-center text-warning p-3">
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="fw-bold text-black">5</span>
+                </div>
+            </div>
+
+             <div class="card" style="width: 300px;">
+                <img src="../images/kids-dailyuse.jpg" class="card-img-top" height="250">
+                <div class="card-header text-center">
+                    <h1>KIDS-DAILY-USE ...</h1>
+                    <p class="fw-bold">upto 25% off on this collection.</p>
+                </div>
+                <div class="card-footer text-center text-warning p-3">
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="fw-bold text-black">5</span>
+                </div>
+             </div>
+
+             <div class="card" style="width: 300px;">
+                <img src="../images/kids-toy.jpg" class="card-img-top" height="250">
+                <div class="card-header text-center">
+                    <h1>TOYS FOR KIDS...</h1>
+                    <p class="fw-bold">upto 20% off on this collection.</p>
+                </div>
+                <div class="card-footer text-center text-warning p-3">
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="fw-bold text-black">5</span>
+                </div>
+             </div>
+
+             <div class="card" style="width: 300px;">
+                <img src="../images/kids-bath-tub.jpg" class="card-img-top" height="250">
+                <div class="card-header text-center">
+                    <h1>KIDS-BATH-TUB...</h1>
+                    <p class="fw-bold">upto 15% off on this collection.</p>
+                </div>
+                <div class="card-footer text-center text-warning p-3">
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="fw-bold text-black">5</span>
+                </div>
+             </div>
+          </div>
+
+          <div class="d-flex justify-content-between py-3" style="padding-right: 120px; padding-left: 120px;">
+            <div class="card" style="width: 300px;">
+                <img src="../images/sunglasses-kids.jpg" class="card-img-top" height="250">
+                <div class="card-header text-center">
+                    <h1>SUNGLASSES KIDS...</h1>
+                    <p class="fw-bold">upto 30% off on this collection.</p>
+                </div>
+                <div class="card-footer text-center text-warning p-3">
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="fw-bold text-black">5</span>
+                </div>
+            </div>
+
+             <div class="card" style="width: 300px;">
+                <img src="../images/kids-powder.jpg" class="card-img-top" height="250">
+                <div class="card-header text-center">
+                    <h1>POWDER FOR KIDS..</h1>
+                    <p class="fw-bold">upto 25% off on this collection.</p>
+                </div>
+                <div class="card-footer text-center text-warning p-3">
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="fw-bold text-black">5</span>
+                </div>
+             </div>
+
+             <div class="card" style="width: 300px;">
+                <img src="../images/KIDS-CAP.jpg" class="card-img-top" height="250">
+                <div class="card-header text-center">
+                    <h1>CAPS FOR KIDS...</h1>
+                    <p class="fw-bold">upto 20% off on this collection.</p>
+                </div>
+                <div class="card-footer text-center text-warning p-3">
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="fw-bold text-black">5</span>
+                </div>
+             </div>
+
+             <div class="card" style="width: 300px;">
+                <img src="../images/electric-toys-kids.jpg" class="card-img-top" height="250">
+                <div class="card-header text-center">
+                    <h1>ELECTRIC TOYS KIDS...</h1>
+                    <p class="fw-bold">upto 15% off on this collection.</p>
+                </div>
+                <div class="card-footer text-center text-warning p-3">
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="fw-bold text-black">5</span>
+                </div>
+             </div>
+          </div>
+        </div>
+
+       
+    </div>
+    <div class="accordion my-5" id="faqs">
+        <div class="accordion-item">
+            <div class="accordion-header">
+                <button class="accordion-button fw-bold text-danger" data-bs-toggle="collapse" data-bs-target="#q1">What is shopping?</button>
+            </div>
+            <div class="accordion-collapse collapse" data-bs-parent="#faqs" id="q1">
+                <div class="accordion-body">
+                    <p class="text-primary">Shopping is the activity of visiting physical stores or browsing online websites to look at, compare, and buy goods or services.</p>
+                </div>
+            </div>
+        </div>
+
+          <div class="accordion-item mt-1">
+            <div class="accordion-header">
+                <button class="accordion-button fw-bold text-danger" data-bs-toggle="collapse" data-bs-target="#q2">How can benifit you in online shopping?</button>
+            </div>
+            <div class="accordion-collapse collapse" data-bs-parent="#faqs" id="q2">
+                <div class="accordion-body">
+                    <p class="text-primary">Online shopping saves you time and money by letting you buy products directly from home.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mx-4 my-5">
+        <nav class="d-flex justify-content-start">
+            <ul class="list-group list-unstyled list-group-horizontal">
+                <li class="list-group-item list-group-item-danger">home</li>
+                <li class="list-group-item list-group-item-primary">kids</li>
+                <li class="list-group-item list-group-item-success">men</li>
+                <li class="list-group-item list-group-item-warning">women</li>
+                <li class="list-group-item list-group-item-info">electronics</li>
+            </ul>
+        </nav>    
+    </div>
+      
+
+
+    
+</body>
+</html>

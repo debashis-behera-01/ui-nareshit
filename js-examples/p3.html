@@ -1,0 +1,27 @@
+<script>
+    var password=prompt("Enter password");
+    if(password.trim()==="chintu"){
+        document.write(`${"Login success"} <br>`);
+    }else{
+        document.write(`${"Invalid password"} <br>`);
+    }
+    var str="welcome to javaScript.JS is a language";
+    document.write(`${str.replaceAll("JS","javaScript")} <br>`);
+    document.write(`${str.includes("e")}<br>`);
+    document.write(`${str.slice(0,8)}<br>`);
+    document.write(`${str.substr(0,8)}<br>`);
+    document.write(`${str.substring(11,22)}<br>`);
+
+    var email=prompt("enter your email");
+    var atPos=email.indexOf("@");
+    var id=email.substring(0,atPos);
+    var domain=email.substring(atPos+1);
+    document.write(`Your id: ${id}<br>Domain:${domain}<br>`);
+    var name=prompt("enter name");
+    var res=name.charAt(0).toUpperCase()+name.slice(1).toLowerCase();
+    document.write(`${res}<br>`);
+    var data="chintu-7486944419";
+    var [name,mobile]=data.split("-");
+    document.write(`Name=${name}<br>mobile=${mobile}<br>`);
+
+</script>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+       body{
+        background-color: rgb(227, 219, 219);
+       }
+       header{
+        background-color: rgb(201, 195, 195);
+        font-family: Arial;
+        font-size: 15px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding:10px;
+        align-items: center;
+       }
+       .bi-bug,.bi-play-fill,.bi-cloud-arrow-up,.bi-file-earmark,.bi-stars,.bi-stopwatch,.bi-person-plus{
+        background-color: rgb(169, 160, 160);
+        padding: 5px;
+        border-radius: 5px;
+       }
+       .bi-file-earmark{
+        margin-left: 6px;
+       }
+       .bi-stars{
+        margin-left: 2px;
+       }
+       .bi-bug{
+        color:rgb(247, 138, 4) ;
+       }
+       .bi-cloud-arrow-up{
+        color: rgb(4, 175, 46);
+        font-weight: bold;
+       }
+        .primium{
+            background-color: rgb(244, 237, 200);
+            color: goldenrod;
+            font-weight: bold;
+            padding: 5px;
+            border-radius: 5px;
+            margin-left: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        main{
+            margin-top: 10px;
+            display: grid;
+            grid-template-columns: 6fr 6fr;
+            grid-gap: 10px;
+        }
+        .left-pannel,.right-pannel{
+            height: 550px;
+            background-color: rgb(208, 202, 202);
+            border-radius: 10px;
+            overflow: auto;
+            border: 1px solid rgb(192, 190, 190);
+            font-family: Arial;
+        }
+        .footer-header{
+            background-color: rgb(140, 138, 138);
+            font-family: Arial;
+            display: flex;
+            flex-direction: row;
+            justify-content: left;
+            justify-content: space-between;
+            
+        
+        }
+        .bi-fullscreen,.bi-chevron-left{
+            justify-content: right;
+        }
+        .easy-word{
+            background-color: rgb(134, 135, 136);
+            border-radius:30px ;
+            font-size: 10px;
+            padding:5px ;
+            color: rgb(4, 196, 249);
+        }
+        .bi-lock{
+            background-color: rgb(134, 135, 136);
+            border-radius:30px ;
+            font-size: 10px;
+            padding:5px ;
+            color: rgb(225, 177, 3); 
+        }
+        .attribute{
+            padding-left: 15px;
+        }
+        .heading{
+            color: rgb(54, 53, 53);
+        }
+        .first-row{
+            display: flex;
+            gap: 10px;
+            justify-content: left;
+            align-items: center;
+            
+        }
+        .third-row{
+            justify-content: right;
+          
+        }
+        .text-under{
+            background-color: rgba(153, 147, 147,0.3);
+            padding: 1px;
+            border-radius: 5px;
+            border: 1px solid rgba(153, 147, 147,0.3);
+            font-size: 12px;
+        }
+        .data-under{
+            font-size: 14px;
+            line-height: 22px;
+            margin-top: 20px;
+             padding-left: 15px;
+        }
+        .example{
+            font-size: 15px;
+             padding-left: 26px;
+        }
+        h5{
+            font-size: 12px;
+             padding-left: 15px;
+        }
+        .script{
+        padding: 5px;
+        display: flex;
+       justify-content: center;
+       align-items: center;
+     
+       gap: 5px;
+    
+        }
+    .script:hover{
+        background-color: rgb(168, 167, 167);
+        border-radius: 5px;
+    }
+        .script img{
+            background-color: white;
+            border-radius: 5px;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="first-row">
+           <span><img src="../images/leetcode logo.png" height="25px" width="25px"></span>
+            <span class="script"><img  src="../images/JS_30_-_240x240.png" height="25px" width="25px"> 30days of javascript</span>
+            <span class="bi bi-chevron-left"></span>
+            <span class="bi bi-chevron-right"></span>
+            <span class="bi bi-shuffle"></span>
+        </div>
+        <div>
+            <span class="bi bi-bug"></span>
+            <span class="bi bi-play-fill"></span>
+            <span class="bi bi-cloud-arrow-up">Submit</span>
+            <span class="bi bi-file-earmark"></span>
+            <span class="bi bi-stars"></span>
+        </div>
+        <div class="third-row">
+            <span class="bi bi-columns-gap"></span>
+            <span class="bi bi-gear"></span>
+            <span class="bi bi-fire">0</span>
+            <span class="bi bi-stopwatch"></span>
+            <span class="bi bi-person-plus"></span>
+            <span class="bi bi-person-circle"></span>
+            <span class="primium">Primium</span>
+        </div>
+    </header>
+    <main>
+        <div class="left-pannel">
+        <header class="footer-header">
+         <div>
+            <span class="bi bi-card-text">Description |</span>
+            <span class="bi bi-book">Editorial |</span>
+            <span class="bi bi-flask">Solution |</span>
+            <span class="bi bi-arrow-counterclockwise">Submissions |</span>
+         </div>  
+         <div>
+            <span class="bi bi-fullscreen"></span>
+            <span class="bi bi-chevron-left"></span>
+         </div> 
+         </header>
+         <div class="attribute">
+            <h2 class="heading">2667.Create Hello World Function</h2>
+            <span class="easy-word">Easy</span>
+            <span class="bi bi-lock">Companies</span>
+         </div> 
+         <div class="data-under">Write a function <span class="text-under">createHelloWorld</span>. It should return a new function that always returns<span class="text-under"> "Hello World"</span>.</div>
+         <h5>Example 1:</h5>
+         <div class="example">
+            <pre><b>Input:</b> args = []
+<b>Output:</b> "Hello World"
+<b>Explanation:</b>
+const f = createHelloWorld();
+f(); // "Hello World"
+
+The function returned by createHelloWorld should always return "Hello World".</pre>
+         </div>
+          <h5>Example 2:</h5>
+          <div class="example">
+          <pre><b>Input: </b>args = [{},null,42]
+<b>Output:</b> "Hello World"
+<b>Explanation:</b>
+const f = createHelloWorld();
+f({}, null, 42); // "Hello World"
+
+Any arguments could be passed to the function but it should still always return "Hello World". 
+           </pre>
+          </div>
+        </div>
+        <div class="right-pannel">
+
+        </div>
+    </main>
+</body>
+</html>

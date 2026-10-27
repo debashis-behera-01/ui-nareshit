@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</head>
+<body>
+    <div >
+        <header class="shadow-lg p-3 d-flex justify-content-between">
+            <div class="align-item-center">
+            <span class="bi bi-bag fs-1"></span>
+            <span class="fs-4 fw-bold text-danger">SHOPPING</span>
+            </div>
+            <div class="d-flex justify-content-center align-items-center fw-bold ">
+                <nav>
+                    <span class="mx-4"><a href="#" class="text-black text-decoration-none">Home</a></span>
+                    <span class="mx-4"><a href="#" class="text-black text-decoration-none">About</a></span>
+                    <span class="mx-4"><a href="#" class="text-black text-decoration-none">Service</a></span>
+                    <span class="mx-4"><a href="#" class="text-black text-decoration-none">Contact</a></span>
+                </nav>
+            </div>
+            <div>
+                <span class="btn btn-lg bi bi-cart btn-warning position-relative"> cart
+                    <span class="bg-danger p-1 rounded rounded-circle badge position-absolute">4</span>
+                </span>
+                <span class="btn btn-lg bi bi-person btn-primary" data-bs-toggle="modal" data-bs-target="#login">Log In</span>
+            </div>
+        </header>
+      <div>
+        <div class="modal fade" id="login">
+            <div class="modal-dialog">
+                <div class="modal-content">
+              <main class="d-flex justify-content-center">
+            <form class="border border-2 p-4 rounded  m-5 " method="get">
+                <div class="fw-bold bi bi-person-fill d-flex justify-content-center">USER REGISTER</div>
+                <div class="mb-3 ">
+                    <label class="form-lable fw-bold ">User name</label>
+                    <div>
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="mb-3 ">
+                    <label class="form-lable fw-bold ">Password</label>
+                    <div>
+                        <input type="password" class="form-control">
+                    </div>
+                </div>
+                <div class="mb-3 ">
+                    <label class="form-lable fw-bold ">Your City</label>
+                    <div>
+                       <select class="form-select">
+                        <option>Select City</option>
+                        <option>Bhadrak</option>
+                         <option>Bhubaneswer</option>
+                          <option>Jajpur</option>
+                       </select>
+                    </div>
+                </div>
+                 <div class="mb-3 ">
+                    <label class="form-lable ">Rating</label>
+                    <div>
+                      <input type="range" class="form-range" min="1" max="5">
+                    </div>
+                </div>
+                <div class="mb-3 ">
+                    <label class="form-lable ">Subscribe</label>
+                    <div class="form-switch">
+                      <input type="checkbox" class="form-check-input"><lable class="form-check-lable">Yes</lable>
+                    </div>
+                </div>
+                <div>
+                    <button type="submit" class="btn btn-warning">Submit</button>
+                     <span><button type="reset" class="btn btn-danger">Clear</button></span>
+                </div>
+            </form>
+            
+        </main>  
+                </div>
+            </div>
+        </div>
+      </div>  
+    </div>
+     <div class="table-responsive p-2 ">
+    <h1 class="d-flex justify-content-center">Tables in bootstrap</h1>
+           
+                <table class="table table-hover table-bordered table-danger table-striped caption-top">
+                    <caption>Proudect Details</caption>
+                    <thead>
+                        <tr>
+                            <th class="text-bg-info">Name</th>
+                            <th class="text-bg-info">Price</th>
+                            <th class="text-bg-info">Discount</th>
+                            <th class="text-bg-info">Total Price</th>
+                            <th class="text-bg-danger">Bill</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                         <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        <nav class="d-flex justify-content-center">
+            <ul class="list-group list-unstyled list-group-horizontal">
+                <li class="list-group-item list-group-item-danger">home</li>
+                <li class="list-group-item list-group-item-primary">kids</li>
+                <li class="list-group-item list-group-item-success">men</li>
+                <li class="list-group-item list-group-item-warning">women</li>
+                <li class="list-group-item list-group-item-info">electronics</li>
+            </ul>
+        </nav>    
+        <div class="d-flex justify-content-center mt-5">
+            <ul class="pagination">
+                <li class="page-item"><a class="page-link">&laquo;</a> </li>
+                <li class="page-item"><a class="page-link">1</a></li>
+                 <li class="page-item"><a class="page-link">2</a></li>
+                  <li class="page-item"><a class="page-link">3</a></li>
+                   <li class="page-item"><a class="page-link">4</a></li>
+                   <li class="page-item"><a class="page-link">&raquo;</a> </li>
+            </ul>
+        </div>
+        <div class="d-flex justify-content-center mt-5">
+            <ul class="breadcrumb" style="--bs-breadcrumb-divider:'<😊>'">
+                <li class="breadcrumb-item">Flipkart</li>
+                <li class="breadcrumb-item">Electronics</li>
+                <li class="breadcrumb-item">Mobile&Accessories</li>
+                <li class="breadcrumb-item">Mobile</li>
+                <li class="breadcrumb-item">Apple Mobiles</li>
+                <li class="breadcrumb-item">iPhone-17</li>
+            </ul>
+        </div>   
+    <div class="mt-5 mb-5">
+      <div class="carousel slide" data-bs-ride="carousel" id="banners" data-bs-theme="dark">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="3000">
+                  <img src="../images/images.jpg" height="500" class="w-100">
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                  <img src="../images/banners2.jpg" height="500" class="w-100">
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                  <img src="../images/modern-black-friday-holiday-sale-offer-banner-get-30-percent-price-drop-vector_1017-47794.avif" height="500" class="w-100">
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                <div style="height: 500px;" class="d-flex flex-row justify-content-center align-items-center text-bg-info">
+                    <h1 class="bg-danger p-5 rounded-pill">IT IS MY 1ST CAROUSEL</h1>
+                </div>
+            </div>
+              <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#banners">
+
+            <span class="carousel-control-prev-icon"></span>
+              </button> 
+                  <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#banners">
+
+            <span class="carousel-control-next-icon"></span>
+        </button>   
+         <div class="carousel-indicators">
+
+            <button style="width: 20px; height: 20px; border-radius: 100%" class="active" data-bs-slide-to="0" data-bs-target="#banners"></button>
+
+            <button style="width: 20px; height: 20px; border-radius: 100%" data-bs-slide-to="1" data-bs-target="#banners"></button>
+
+            <button style="width: 20px; height: 20px; border-radius: 100%" data-bs-slide-to="2" data-bs-target="#banners"></button>
+             <button style="width: 20px; height: 20px; border-radius: 100%" data-bs-slide-to="3" data-bs-target="#banners"></button>
+
+        </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>

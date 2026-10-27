@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script>
+        function VerifyCard(){
+            var card = document.getElementById("txtCard").value;
+            var imgCard = document.getElementById("imgCard");
+            if(card.startsWith("7486")){
+                imgCard.src = "../images/visa.png"; 
+            } else {
+                imgCard.src ="../images/master.png";
+            }
+        }
+        function VerifyEmail(){
+            var email = document.getElementById("txtEmail").value;
+            var lblEmail = document.getElementById("lblEmail");
+            if(email.endsWith("gmail.com")){
+                lblEmail.innerHTML= "";
+            } else {
+                lblEmail.innerHTML="Invalid Gmail Account".fontcolor('red').fontsize(4);
+            }
+        }
+    </script>
+
+</head>
+
+<body class="container-fluid p-4">
+    <dl class="w-25">
+        <dt>Your Card Number</dt>
+        <dd class="input-group"><input onblur="VerifyCard()" type="text" class="form-control" id="txtCard"> <img id="imgCard" class="input-group-text" width="70"> </dd>
+        <dt>Your Gmail Id</dt>
+        <dd>
+            <input type="text" onblur="VerifyEmail()" id="txtEmail" class="form-control">
+        </dd>
+        <dd id="lblEmail"></dd>
+    </dl>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<script>
+     // var tv={
+     // name:"Samsung Tv",
+     // price:34000,
+     // stock:true,
+     // vendors:["Bajaj","Reliance","Chroma"],
+     // rating:{rate:4.6,count:6000},
+     // print:function(){
+     //      document.write(`Name=${this.name}<br>Price=${this.price}<br>Stock=${this.stock}<br>Venderos=${this.vendors.join('/')}<br>Rating=${this.rating.rate}[${this.rating.count}]`);
+     // }
+     //  }
+     //  tv.price=prompt("enter price");
+     //  tv.print();
+     var product={
+          id:1,
+          name:'TV',
+          price:34000,
+          rating:4.5
+     }
+     for(var key in product){
+          document.write(`${key}:${product[key]}<br>`);
+     }
+</script>

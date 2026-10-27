@@ -1,0 +1,85 @@
+<!-- <script>
+    var values=['kids','mens','womens','electronics'];
+    values.unshift('all');
+    values.splice(4,0,'footwear');
+    values.splice(5,0,'homedecor');
+   values.shift();
+    values.pop();
+    values.splice(2,1);
+    values.map(function(value,index){
+        document.write(`[${index}]:${value}<br>`)
+    })
+</script> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function buttonclick(){
+            var pic=document.createElement("img");
+            pic.width="200";
+            pic.height="200";
+            pic.src="../images/java.jpg";
+            pic.alt="please select a pic";
+            
+
+            document.querySelector(".container").appendChild(pic);
+             }
+    </script>
+</head>
+<body>
+    <button onclick="buttonclick()">upload a pic</button>
+    <br><br>
+    <div class="container">
+
+    </div>
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <script>
+          var categories = ["Home", "Fashion", "Mobiles", "Footwear", "Kids"];
+          function bodyload(){
+               categories.map(function(category){
+                    var li = document.createElement("li");
+                    li.textContent = category;
+                    document.querySelector("ol").appendChild(li);
+                    var option = document.createElement("option");
+                    option.text =category;
+                    option.value = category;
+                    document.querySelector("select").appendChild(option);
+                    var span = document.createElement("span");
+                    span.innerHTML = `<a href='${category}.html'>${category}</a>`;
+                    document.querySelector("nav").appendChild(span);
+               })
+          }
+     </script>
+     <style>
+          nav {
+               display: flex;
+               flex-direction: row;
+               justify-content: space-between;
+               border: 1px solid black;
+               padding: 20px;
+          }
+     </style>
+</head>
+<body onload="bodyload()">
+     <nav>
+     </nav>
+    <ol>
+    </ol>
+    <select>
+    </select>
+</body>
+</html> -->
+
+

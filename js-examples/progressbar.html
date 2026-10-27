@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+
+    <script>
+    function verifyPassword(){
+        var pwd=document.getElementById("psd").value;
+        var lblpwd=document.getElementById("lblPwd");
+        var regExp=/^(?=.*[A-Z])\w{4,10}$/;
+        var progressbar=document.getElementById("progressBar");
+
+
+        if(pwd.match(regExp)){
+            lblPwd.innerHTML="Strong Password";
+            progressbar.className="progress-bar bg-success progress-bar-striped progress-bar-animated";
+            progressbar.style.width="100%";
+        }else{
+            if(pwd.length<4){
+            lblPwd.innerHTML="Poor Password";
+            progressbar.className="progress-bar bg-danger progress-bar-striped progress-bar-animated";
+            progressbar.style.width="30%";
+            }else{
+            lblPwd.innerHTML="Weak Password";
+            progressbar.className="progress-bar bg-warning progress-bar-striped progress-bar-animated";
+            progressbar.style.width="70%";
+            
+        }
+
+        }
+    }
+    </script>
+</head>
+<body class="container-fluid">
+    <dl class="w-25 mt-4">
+        <dt>Password</dt>
+        <dd><input type="password" class="form-control" onkeyup="verifyPassword()" id="psd"></dd>
+        <dd class="progress">
+            <div id="progressBar">
+                <span class="text-white" id="lblPwd"></span>
+            </div>
+        </dd>
+    </dl>
+    
+</body>
+</html>

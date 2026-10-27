@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        body{
+          background-image: url(/images/Wallpapers.jpg);
+          background-size: cover;
+          background-repeat: no-repeat;
+          display: flex;
+          justify-content: center;
+          padding-top: 50px;
+        }
+        form{
+            border: 2px solid grey;
+            padding: 20px;
+            background-color: rgba(167, 141, 167, 0.5);
+            border-radius: 10px;
+            box-shadow: 5px 5px 15px rgba(55, 95, 182, 0.9);
+            transform: scale(1);
+            transition-duration: 1s;
+        }
+        form:hover{
+             transform: scale(1.1);
+            transition-duration: 1s;
+             box-shadow: 15px 10px 20px rgba(251, 4, 37, 0.9);
+        }
+        h2{
+            display: flex;
+            justify-content: center;
+             margin-top: -10px;
+             background:  linear-gradient(to right,rgb(182, 173, 224),rgb(62, 17, 200));
+             border-radius: 10px;
+              box-shadow: 5px 5px 15px rgb(215, 201, 201);
+              transition-duration: 1s;
+             
+        }
+        h2:hover{
+            box-shadow: 5px 5px 15px rgb(202, 13, 13);
+            transition-duration: 1s;
+             transform: translate(2px,3px);
+        }
+        .btn{
+            display: flex;
+            justify-content: space-between;
+        }
+        .submit{
+            background: linear-gradient(to left ,rgb(62, 186, 77),rgb(65, 7, 212));
+            color: white;
+            text-align: center;
+            font-weight:bold;
+            transition: 1s;
+            transform: scale(1.1);
+        }
+        .submit:hover{
+            transform: scale(1);
+            transition: 1s;
+
+        }
+        .reset{
+             background: linear-gradient(to right ,rgb(35, 235, 16),rgb(241, 69, 7));
+            color: white;
+            text-align: center;
+            font-weight:bold;
+            transform: scale(1.1);
+            transition: 1s;
+        }
+        .reset:hover{
+            transform: scale(1);
+            transition: 1s;
+        }
+        .formbody div{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 10px;
+        
+        }
+        .psw{
+            position: relative;
+        }
+        .bi-eye{
+            position: absolute;
+            right: 5px;
+            top: 2px;
+        }
+      
+    </style>
+
+</head>
+<body>
+    <form method="get">
+       <div>
+        <h2>REGISTRATION FORM</h2>
+       </div>
+        
+    <div class="formbody">
+     <div>
+         <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="enter your name">
+     </div>
+     <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="example@gmail.com">
+     </div>
+        
+     <div class="psw">
+         <label for="password">password:</label>
+         <span><input type="password" id="password" name="password" placeholder="enter valid password"></span>
+        <span class="bi bi-eye"></span>
+     </div>
+         
+    </div>    
+    
+    <div class="btn">
+         <span>
+        <button type="reset" class="reset">reset</button>
+       </span>
+         <span>
+            <button type="submit" class="submit">submit</button>
+       </span>
+     
+    </div>
+      
+
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,25 @@
+var cityName="Odisha";
+var API_KEY="4f0bf91ab673e4920fe6825a499f92da";
+
+function weatherLoad(){
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${API_KEY}&units=metric`)
+    .then(function(response){
+        return response.json();
+    })
+    .then(function(data){
+        console.log(data);
+        document.getElementById("lblCity").innerHTML=data.name;
+        document.getElementById("lblTemp").innerHTML=`${data.main.temp.toFixed(0)}&deg;C`;
+        document.getElementById("lblDescription").innerHTML=data.weather[0].description.toUpperCase();
+        document.getElementById("lblHumidity").innerHTML=`${data.main.humidity}<span class="bi bi-thermometer"></span>`;
+        document.getElementById("lblSpeed").innerHTML = `${data.wind.speed.toLocaleString('en-in',{ style:'unit', unit:'kilometer-per-hour' })} <span class="bi bi-wind"></span>`;
+    })
+}
+function SearchClick(){
+    cityName=document.getElementById("txtCity").value;
+    weatherLoad();
+}
+function CityWeather(cityname){
+    cityName=cityname;
+    weatherLoad();
+}

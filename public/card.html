@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naresh IT</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        body{
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+        }
+        .card:hover{
+            background-color: rgb(187, 170, 170);
+            color: brown;
+
+        }
+        .card{
+            border: 1px solid gray;
+            width: 250px;
+            margin: 20px;
+            border-radius: 10px;
+            font-family: Arial;
+            box-shadow: 5px 2px 15px;
+        }
+     .card-img{
+        width: 250px;
+        height: 200px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+     }
+     .card-title{
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        font-size: 25px;
+        font-weight: bold;
+        text-shadow: 3px 3px 10px ;
+     }
+     .rating{
+        text-align: center;
+        color: rgb(247, 211, 7);
+        text-shadow: 1px 1px 20px;
+        padding-top: 10px;
+     }
+     .rate{
+        color: black;
+        font-weight: bold;
+     }
+     .course-details{
+        font-weight: bold;
+        list-style: none;
+        margin-left: -30px;
+     }
+     .course-details li{
+        margin-bottom: 15px;
+     }
+     .card-footer{
+        display: grid;
+        grid-template-columns: 6fr 6fr;
+        border-top:1px solid black ;
+     }
+     .btn-enroll{
+     background-color: blue;
+     color:white;
+     font-weight: bold;
+     text-shadow: 2px 2px 9px red;
+     padding:15px ;
+     font-size: 20px;
+     text-align: center;
+     border-bottom-left-radius: 10px;
+     }
+     .btn-share{
+     background-color:rgb(11, 224, 118);
+     font-weight: bold;
+     text-shadow: 2px 2px 9px red;
+     padding:15px ;
+     font-size: 20px;
+     text-align: center;
+     border-bottom-right-radius: 10px;
+     }
+
+    </style>
+</head>
+<body>
+  <div class="card">
+        <div class="card-header">
+            <img class="card-img" src="../images/python.jpg">
+        </div>
+        <div class="card-body">
+            <div class="card-title">Python</div>
+            <div class="rating">
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="rate">5</span>
+            </div>
+            <ul class="course-details">
+                <li class="bi bi-calendar-date"> Date: 7 Aug 2026</li>
+                <li class="bi bi-person-fill"> By: someone</li>
+                <li class="bi bi-clock-history"> Dur: 6 months</li>
+            </ul>
+        </div>
+        <div class="card-footer">
+            <div class="btn-enroll">Enroll</div>
+            <div class="btn-share"><span class="bi bi-share-fill"></span> Share</div>
+        </div>
+   </div>
+    <div class="card">
+        <div class="card-header">
+            <img class="card-img" src="../images/java.jpg">
+        </div>
+        <div class="card-body">
+            <div class="card-title">Java</div>
+            <div class="rating">
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="rate">5</span>
+            </div>
+            <ul class="course-details">
+                <li class="bi bi-calendar-date"> Date: 7 Aug 2026</li>
+                <li class="bi bi-person-fill"> By: someone</li>
+                <li class="bi bi-clock-history"> Dur: 6 months</li>
+            </ul>
+        </div>
+        <div class="card-footer">
+            <div class="btn-enroll">Enroll</div>
+            <div class="btn-share"><span class="bi bi-share-fill"></span> Share</div>
+        </div>
+   </div> 
+    <div class="card">
+        <div class="card-header">
+            <img class="card-img" src="../images/devops.jpg">
+        </div>
+        <div class="card-body">
+            <div class="card-title">Devops</div>
+            <div class="rating">
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="rate">5</span>
+            </div>
+            <ul class="course-details">
+                <li class="bi bi-calendar-date"> Date: 7 Aug 2026</li>
+                <li class="bi bi-person-fill"> By: someone</li>
+                <li class="bi bi-clock-history"> Dur: 6 months</li>
+            </ul>
+        </div>
+        <div class="card-footer">
+            <div class="btn-enroll">Enroll</div>
+            <div class="btn-share"><span class="bi bi-share-fill"></span> Share</div>
+        </div>
+   </div> 
+   
+</body>
+</html>

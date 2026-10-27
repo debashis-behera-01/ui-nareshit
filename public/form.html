@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRATION FORM</title>
+    <style>
+      body{
+        display: flex;
+        justify-content: center;
+        font-family: Arial;
+      }
+      form{
+        border: 2px solid black;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow:0px 0px 15px rgba(185, 25, 25, 0.911) ;
+        background:linear-gradient(to bottom, rgb(100, 171, 111), rgb(246, 14, 246));
+      }
+      .heading{
+        display: flex;
+        justify-content: center;
+        margin-top: -10px;
+        padding: 10px;   
+        border-radius: 10px;
+      }
+      .heading:hover{
+         box-shadow: 0px 0px 15px rgba(17, 15, 15, 0.911);
+         font-size:27px;
+         transition:linear;
+
+      }
+      .submit{
+        background: linear-gradient(to right,rgb(222, 130, 130),rgb(246, 5, 5));
+        color: white;
+        font-weight: bold;
+        margin-right: 10px;    
+      }
+      .submit:focus{
+        font-size: 15px;
+        box-shadow: 0px 0px 15px rgba(222, 19, 19, 0.911);
+      }
+      .reset{
+        background: linear-gradient(to right,rgb(142, 130, 222),rgb(61, 5, 246));
+        color: white;
+        font-weight: bold;     
+      }
+      .reset:focus{
+       font-size: 15px;
+        box-shadow: 0px 0px 15px rgba(28, 3, 251, 0.911);
+      }
+      textarea{
+        background-color: rgba(208, 243, 243, 0.649);
+      }
+      input{
+        background-color: rgba(208, 243, 243, 0.649);
+      }
+      select{
+        background-color: rgba(208, 243, 243, 0.649);
+      }
+    </style>
+</head>
+<body>
+      <form  method="get">
+          <h2 class="heading">Registration Form</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="enter your name">
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="enter your email">
+        <br><br>
+
+        <label for="password">password:</label>
+        <input type="password" id="password" name="password" placeholder="enter your password">
+        <br><br>
+        
+        <label for="gender">Gender:</label>
+        <input type="radio" value="male" name="gender">male
+        <input type="radio" value="female" name="gender">female
+        <br><br>
+
+        <label>Skills:</label>
+        <input type="checkbox" name="skill" value="java">Java
+        <input type="checkbox" name="skill" value="python">Python
+        <input type="checkbox" name="skill" value=".net">.NET
+        <br><br>
+
+        <label for="city">City:</label>
+        <select id="city" name="city">
+            <option value="jajpur">Jajpur</option> 
+            <option value="ctc">CTC</option>     
+            <option value="nayagarh">Nayagrah</option>     
+            <option value="bhadrak">Bhadrak</option>         
+        </select>
+        <br><br>
+
+        <label for="message">Address:</label>
+        <br>
+        <textarea id="message" name="message" rows="4" cols="30" placeholder="enter your address"></textarea>
+        <br><br>
+         <span><button type="submit" class="submit" >submit</button></span>
+           <span><button type="reset" class="reset" >Clear</button></span>
+        
+    </form>
+</body>
+</html>

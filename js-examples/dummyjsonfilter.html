@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script>
+        function LoadProducts(url){
+            document.querySelector("section").innerHTML="";
+            fetch(url)
+            .then(function(response){
+                return response.json();
+            })
+            .then(function(object){
+                object.products.map(function(product){
+                    var div=document.createElement("div");
+                    div.className="card m-2 p-2";
+                    div.style.width="200px";
+                    div.innerHTML=`
+                    <img src=${product.thumbnail} height="100" class="card-img-top">
+                    <div class="card-header" style="height:90px">${product.title}</div>
+                    <div class="card-footer">
+                        <button class="btn btn-warning w-100">Buy</button>
+                    </div>`;
+                    document.querySelector("section").appendChild(div);
+                })
+            })
+        }
+        function LoadCategories(){
+            fetch(`https://dummyjson.com/products/categories`)
+            .then(function(response){
+                return response.json();
+
+            })
+            .then(function(categories){
+                categories.map(function(category){
+                    var option=document.createElement("option");
+                    option.text=category.name;
+                    option.value=category.slug;
+                    document.getElementById("lstCategories").appendChild(option);
+                })
+            })
+        }
+        function bodyLoad(){
+            LoadProducts('https://dummyjson.com/products');
+            LoadCategories();
+        }
+        function CategoryChange(){
+              var categoryName = document.getElementById("lstCategories").value;
+            if(categoryName===""){
+                LoadProducts('https://dummyjson.com/products');
+            } else {
+                LoadProducts(`https://dummyjson.com/products/category/${categoryName}`);
+
+            }
+        }
+    </script>
+</head>
+<body class="container-fluid d-flex justify-content-between" onload="bodyLoad()">
+    <nav class="col-2">
+        <label>Select Category</label>
+        <select class="form-select" onchange="CategoryChange()" id="lstCategories" size="10">
+
+        </select>
+    </nav>
+    <section class="col-12 d-flex flex-wrap overflow-auto" style="height: 600px;">
+
+
+    </section>
+</body>
+</html>
